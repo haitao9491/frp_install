@@ -1,0 +1,120 @@
+Server:
+{Raycores_7}
+bind_addr=0.0.0.0
+bind_port=9011
+
+{Raycores_80}
+bind_addr=0.0.0.0
+bind_port=9012
+
+{JHXD}
+bind_addr=0.0.0.0
+bind_port=9013
+privilege_token = 1234qwer!
+
+{haitao_Thunder}
+bind_addr=0.0.0.0
+bind_port=9021
+privilege_token = 1234qwer!
+
+{haimeng_comany}
+bind_addr=0.0.0.0
+bind_port=9022
+privilege_token = 1234qwer!
+
+{jiefu_company}
+bind_addr=0.0.0.0
+bind_port=9023
+privilege_token = 1234qwer!
+
+Client:
+{Raycores_7}
+server_addr = 104.243.28.235
+server_port = 9011
+[SSH1]
+type = tcp
+local_ip = 172.168.10.7
+local_port = 22
+remote_port = 9110
+[SSH2]
+type = tcp
+local_ip = 172.168.10.80
+local_port = 22
+remote_port = 9111
+[Gitlab]
+type = tcp
+local_ip = 172.168.10.16
+local_port = 80
+remote_port = 9112
+
+{Raycores_80}
+server_addr = 104.243.28.235
+server_port = 9012
+[SSH1]
+type = tcp
+local_ip = 172.168.10.7
+local_port = 22
+remote_port = 9120
+[SSH2]
+type = tcp
+local_ip = 172.168.10.80
+local_port = 22
+remote_port = 9121
+[Gitlab]
+type = tcp
+local_ip = 172.168.10.16
+local_port = 80
+remote_port = 9122
+
+{JHXD}
+server_addr = 104.243.28.235
+server_port = 9013
+privilege_token = 1234qwer!
+[anydesk]
+type=tcp
+local_ip = 127.0.0.1
+local_port = 7070
+remote_port = 9130
+[SSH]
+type=tcp
+local_ip = 192.168.250.5
+local_port = 22
+remote_port = 9131
+[HTTP]
+type = tcp
+local_ip = 192.168.250.11
+local_port = 8080
+remote_port = 9132
+
+{haitao_Thunder}
+server_addr = 104.243.28.235
+server_port = 9021
+privilege_token = 1234qwer!
+[anydesk]
+type=tcp
+local_ip = 127.0.0.1
+local_port = 7070
+remote_port = 9210
+[remote]
+
+{haimeng_comany}
+server_addr = 104.243.28.235
+server_port = 9022
+privilege_token = 1234qwer!
+[anysesk]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 7070
+remote_port = 9220
+[remote]
+
+{jiefu_company}
+server_addr = 104.243.28.235
+server_port = 9023
+privilege_token = 1234qwer!
+[anydesk]
+type = tcp
+local_ip = 127.0.0.1
+local_port = 7070
+remote_port = 9230
+[remote]

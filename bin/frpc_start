@@ -1,0 +1,11 @@
+#!/bin/sh
+killall frpc 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/Raycores_7.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/Raycores_80.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/JHXD.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/haitao_Thunder.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/haimeng_comany.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/jiefu_company1.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/jiefu_company2.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/haiting_company.Client >/dev/null 2>&1 & 
+nohup /opt/frp/bin/frpc -c /opt/frp/etc/server_home.Client >/dev/null 2>&1 & 

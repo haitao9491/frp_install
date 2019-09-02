@@ -1,0 +1,19 @@
+[common]
+server_addr = 104.243.28.235
+server_port = 9011
+[SSH1]
+type = tcp
+local_ip = 172.168.10.7
+local_port = 22
+remote_port = 9110
+[SSH2]
+type = tcp
+local_ip = 172.168.10.80
+local_port = 22
+remote_port = 9111
+[Gitlab]
+type = tcp
+local_ip = 172.168.10.16
+local_port = 80
+remote_port = 9112
+
